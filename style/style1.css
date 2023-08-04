@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F7F7;
+    width: 99.1%;
+    height: 1120px;
+}
+.navbar
+{ 
+
+ border: 3px solid #7B7B7B29;
+ background-color: #FFFFFF;
+ width: 100.8%;
+ height: 95px;
+ display: flex;
+ align-items: center;
+ column-gap: 12px;
+ font-size: 36px;
+ font-weight: bold;
+ 
+}
+.bls{
+    color: #00A5EC;
+    /* font-weight: bold; */
+}
+.tasks{
+    
+    display: flex;
+    justify-content: flex-end;
+    /* moves horizontaly */
+    text-decoration: none;
+   
+    width: 95%;
+    align-items: center;
+    /* moves vertically */
+    column-gap: 12px;
+    font-size: 27px;
+    height: 105px;
+  
+}
+.plus-logo
+{
+    color: #00A5EC;
+}
+
+a{
+    
+    text-decoration: none;
+    color: #00A5EC;
+    
+}
+ 
+
+.main-container{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.sub-container{
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    /* it will make card responsive */
+    gap: 22px;
+    justify-content: flex-start;
+   
+}
+
+/* by default h1 is 32px */
+.card{
+
+    width: 299px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: 3px solid  #EDEDED;
+    height: 305px;
+
+}
+
+h3{
+    
+    position: relative;
+    left: 22px;
+    top: 10px;  
+    color: #00A5EC; 
+    font-size: 22px;
+} 
+.card .heading{
+    height: 54px;
+}
+input{
+    height: 22px;
+    width: 22px;
+}
+.main-checkbox{
+    color: #C2C2C2;
+    position: relative;
+    left: 22px;
+    top: 17px;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.sub-checkbox{
+    position: relative;
+    left: 22px;
+    top: 18px;
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width:500px)
+{
+    .sub-container{
+        flex-direction: column;
+        /* flex direction by default row */
+    }
+}
+@media screen and (max-width:402px)
+{
+    .add-new-task
+    {
+         visibility: hidden; 
+        /* display: none; */
+
+    }
+}

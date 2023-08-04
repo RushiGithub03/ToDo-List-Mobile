@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F7F7;
+    width: 99.1%;
+    height: 1120px;
+}
+.navbar
+{ 
+
+ border: 3px solid #7B7B7B29;
+ background-color: #FFFFFF;
+ width: 100.8%;
+ height: 95px;
+ display: flex;
+ align-items: center;
+ column-gap: 12px;
+ font-size: 36px;
+ font-weight: bold;
+ 
+}
+.bls{
+    color: #00A5EC;
+    /* font-weight: bold; */
+}
+.tasks{
+    
+    display: flex;
+    justify-content: flex-end;
+    /* moves horizontaly */
+    text-decoration: none;
+   
+    width: 95%;
+    align-items: center;
+    /* moves vertically */
+    column-gap: 12px;
+    font-size: 27px;
+    height: 105px;
+  
+}
+.plus-logo
+{
+    color: #00A5EC;
+}
+
+a{
+    
+    text-decoration: none;
+    color: #00A5EC;
+    
+}
+ 
+
+.main-container{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.sub-container{
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    /* it will make card responsive */
+    gap: 22px;
+    justify-content: flex-start;
+   
+}
+
+/* by default h1 is 32px */
+.card{
+
+    width: 299px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: 3px solid  #EDEDED;
+    height: 305px;
+
+}
+
+h3{
+    
+    position: relative;
+    left: 22px;
+    top: 10px;  
+    color: #00A5EC; 
+    font-size: 22px;
+} 
+.card .heading{
+    height: 54px;
+}
+input{
+    height: 22px;
+    width: 22px;
+}
+.main-checkbox{
+    color: #C2C2C2;
+    position: relative;
+    left: 22px;
+    top: 17px;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.sub-checkbox{
+    position: relative;
+    left: 22px;
+    top: 18px;
+    font-size: 18px;
+}
+
+
+
+
+.opacity
+{   position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+    opacity: 0.5;
+    /* filter: blur(1); */
+    
+
+}
+
+.outer-container
+{
+    border: 1px solid black;
+    background-color: white;
+    width: 285px;
+    height: 305px;
+    position: absolute;
+    top: 32%;
+    left: 43%;
+    border-radius: 15px;
+}
+
+.inner-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 62px;
+    position: relative;
+    font-weight: bold;
+}
+.new-task
+{
+  position: absolute;
+  left: 12px;
+  top: 22px;
+  font-size: 18px;
+
+}
+.outer-para
+{
+font-size: 30px ;
+position: absolute;
+top: 5px;
+right: 5px;
+color: #858585;
+}
+
+.input
+{ 
+    color: #858585;
+    width: 90%;
+    height: 25px;
+    padding-left: 10px;
+    position: relative;
+    top: 12px;
+    left: 12px;
+    border-radius: 4px;
+    
+   
+}
+
+.btn
+{   
+    border: 2px solid  #00A5EC;
+    border-radius: 8px;
+    height: 37px;
+    width: 138px;
+    background-color: #00A5EC;
+    color: white;
+    position: absolute;
+    bottom: 32px;
+    right: 23px;
+}
+
+
+
+@media screen and (max-width:500px)
+{
+    .inner-container{
+        flex-direction: column;
+    }
+    .add-new-task
+    {
+         visibility: hidden; 
+        
+
+    }
+    .outer-container{
+        left: 15%;
+        width: 83%;
+    }
+
+    .opacity {
+        height: 282vh;
+    }
+
+  
+}
