@@ -13,7 +13,7 @@ body{
 
  border: 3px solid #7B7B7B29;
  background-color: #FFFFFF;
- width: 100.8%;
+ width: 100.7%;
  height: 95px;
  display: flex;
  align-items: center;
@@ -86,7 +86,7 @@ h3{
     left: 22px;
     top: 10px;  
     color: #00A5EC; 
-    font-size: 20px;
+    /* font-size: 20px; */
 } 
 .card .heading{
     height: 54px;
